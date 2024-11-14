@@ -1,5 +1,7 @@
-/home/zkm/ros/ros2/wp/install/ros2cc/lib/ros2cc/talker
-/home/zkm/ros/ros2/wp/install/ros2cc/lib/ros2cc/listener
+/home/zkm/ros/ros2/wp/install/ros2cc/lib/ros2cc/talker_str
+/home/zkm/ros/ros2/wp/install/ros2cc/lib/ros2cc/listener_str
+/home/zkm/ros/ros2/wp/install/ros2cc/lib/ros2cc/talker_int32
+/home/zkm/ros/ros2/wp/install/ros2cc/lib/ros2cc/listener_int32
 /home/zkm/ros/ros2/wp/install/ros2cc/share/ros2cc//launch/allstart.launch.py
 /home/zkm/ros/ros2/wp/install/ros2cc/share/ament_index/resource_index/package_run_dependencies/ros2cc
 /home/zkm/ros/ros2/wp/install/ros2cc/share/ament_index/resource_index/parent_prefix_path/ros2cc

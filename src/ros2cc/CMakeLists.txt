@@ -23,15 +23,26 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
-add_executable(talker src/publisher_str.cpp)
-ament_target_dependencies(talker rclcpp std_msgs)
 
-add_executable(listener src/subscriber_str.cpp)
-ament_target_dependencies(listener rclcpp std_msgs)
+add_executable(talker_str src/publisher_str.cpp)
+ament_target_dependencies(talker_str rclcpp std_msgs)
+
+add_executable(listener_str src/subscriber_str.cpp)
+ament_target_dependencies(listener_str rclcpp std_msgs)
+
+
+add_executable(talker_int32 src/publisher_int32.cpp)
+ament_target_dependencies(talker_int32 rclcpp std_msgs)
+
+add_executable(listener_int32 src/subscriber_int32.cpp)
+ament_target_dependencies(listener_int32 rclcpp std_msgs)
+
 
 install(TARGETS
-  talker
-  listener
+  talker_str
+  listener_str
+  talker_int32
+  listener_int32
   DESTINATION lib/${PROJECT_NAME})
 
 install(DIRECTORY

@@ -198,78 +198,152 @@ ros2cc_uninstall/fast:
 .PHONY : ros2cc_uninstall/fast
 
 #=============================================================================
-# Target rules for targets named talker
+# Target rules for targets named talker_str
 
 # Build rule for target.
-talker: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 talker
-.PHONY : talker
+talker_str: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 talker_str
+.PHONY : talker_str
 
 # fast build rule for target.
-talker/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker.dir/build.make CMakeFiles/talker.dir/build
-.PHONY : talker/fast
+talker_str/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker_str.dir/build.make CMakeFiles/talker_str.dir/build
+.PHONY : talker_str/fast
 
 #=============================================================================
-# Target rules for targets named listener
+# Target rules for targets named listener_str
 
 # Build rule for target.
-listener: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 listener
-.PHONY : listener
+listener_str: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 listener_str
+.PHONY : listener_str
 
 # fast build rule for target.
-listener/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/listener.dir/build.make CMakeFiles/listener.dir/build
-.PHONY : listener/fast
+listener_str/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/listener_str.dir/build.make CMakeFiles/listener_str.dir/build
+.PHONY : listener_str/fast
 
-src/publisher_member_function.o: src/publisher_member_function.cpp.o
-.PHONY : src/publisher_member_function.o
+#=============================================================================
+# Target rules for targets named talker_int32
+
+# Build rule for target.
+talker_int32: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 talker_int32
+.PHONY : talker_int32
+
+# fast build rule for target.
+talker_int32/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker_int32.dir/build.make CMakeFiles/talker_int32.dir/build
+.PHONY : talker_int32/fast
+
+#=============================================================================
+# Target rules for targets named listener_int32
+
+# Build rule for target.
+listener_int32: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 listener_int32
+.PHONY : listener_int32
+
+# fast build rule for target.
+listener_int32/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/listener_int32.dir/build.make CMakeFiles/listener_int32.dir/build
+.PHONY : listener_int32/fast
+
+src/publisher_int32.o: src/publisher_int32.cpp.o
+.PHONY : src/publisher_int32.o
 
 # target to build an object file
-src/publisher_member_function.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker.dir/build.make CMakeFiles/talker.dir/src/publisher_member_function.cpp.o
-.PHONY : src/publisher_member_function.cpp.o
+src/publisher_int32.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker_int32.dir/build.make CMakeFiles/talker_int32.dir/src/publisher_int32.cpp.o
+.PHONY : src/publisher_int32.cpp.o
 
-src/publisher_member_function.i: src/publisher_member_function.cpp.i
-.PHONY : src/publisher_member_function.i
+src/publisher_int32.i: src/publisher_int32.cpp.i
+.PHONY : src/publisher_int32.i
 
 # target to preprocess a source file
-src/publisher_member_function.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker.dir/build.make CMakeFiles/talker.dir/src/publisher_member_function.cpp.i
-.PHONY : src/publisher_member_function.cpp.i
+src/publisher_int32.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker_int32.dir/build.make CMakeFiles/talker_int32.dir/src/publisher_int32.cpp.i
+.PHONY : src/publisher_int32.cpp.i
 
-src/publisher_member_function.s: src/publisher_member_function.cpp.s
-.PHONY : src/publisher_member_function.s
+src/publisher_int32.s: src/publisher_int32.cpp.s
+.PHONY : src/publisher_int32.s
 
 # target to generate assembly for a file
-src/publisher_member_function.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker.dir/build.make CMakeFiles/talker.dir/src/publisher_member_function.cpp.s
-.PHONY : src/publisher_member_function.cpp.s
+src/publisher_int32.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker_int32.dir/build.make CMakeFiles/talker_int32.dir/src/publisher_int32.cpp.s
+.PHONY : src/publisher_int32.cpp.s
 
-src/subscriber_member_function.o: src/subscriber_member_function.cpp.o
-.PHONY : src/subscriber_member_function.o
+src/publisher_str.o: src/publisher_str.cpp.o
+.PHONY : src/publisher_str.o
 
 # target to build an object file
-src/subscriber_member_function.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/listener.dir/build.make CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o
-.PHONY : src/subscriber_member_function.cpp.o
+src/publisher_str.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker_str.dir/build.make CMakeFiles/talker_str.dir/src/publisher_str.cpp.o
+.PHONY : src/publisher_str.cpp.o
 
-src/subscriber_member_function.i: src/subscriber_member_function.cpp.i
-.PHONY : src/subscriber_member_function.i
+src/publisher_str.i: src/publisher_str.cpp.i
+.PHONY : src/publisher_str.i
 
 # target to preprocess a source file
-src/subscriber_member_function.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/listener.dir/build.make CMakeFiles/listener.dir/src/subscriber_member_function.cpp.i
-.PHONY : src/subscriber_member_function.cpp.i
+src/publisher_str.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker_str.dir/build.make CMakeFiles/talker_str.dir/src/publisher_str.cpp.i
+.PHONY : src/publisher_str.cpp.i
 
-src/subscriber_member_function.s: src/subscriber_member_function.cpp.s
-.PHONY : src/subscriber_member_function.s
+src/publisher_str.s: src/publisher_str.cpp.s
+.PHONY : src/publisher_str.s
 
 # target to generate assembly for a file
-src/subscriber_member_function.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/listener.dir/build.make CMakeFiles/listener.dir/src/subscriber_member_function.cpp.s
-.PHONY : src/subscriber_member_function.cpp.s
+src/publisher_str.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker_str.dir/build.make CMakeFiles/talker_str.dir/src/publisher_str.cpp.s
+.PHONY : src/publisher_str.cpp.s
+
+src/subscriber_int32.o: src/subscriber_int32.cpp.o
+.PHONY : src/subscriber_int32.o
+
+# target to build an object file
+src/subscriber_int32.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/listener_int32.dir/build.make CMakeFiles/listener_int32.dir/src/subscriber_int32.cpp.o
+.PHONY : src/subscriber_int32.cpp.o
+
+src/subscriber_int32.i: src/subscriber_int32.cpp.i
+.PHONY : src/subscriber_int32.i
+
+# target to preprocess a source file
+src/subscriber_int32.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/listener_int32.dir/build.make CMakeFiles/listener_int32.dir/src/subscriber_int32.cpp.i
+.PHONY : src/subscriber_int32.cpp.i
+
+src/subscriber_int32.s: src/subscriber_int32.cpp.s
+.PHONY : src/subscriber_int32.s
+
+# target to generate assembly for a file
+src/subscriber_int32.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/listener_int32.dir/build.make CMakeFiles/listener_int32.dir/src/subscriber_int32.cpp.s
+.PHONY : src/subscriber_int32.cpp.s
+
+src/subscriber_str.o: src/subscriber_str.cpp.o
+.PHONY : src/subscriber_str.o
+
+# target to build an object file
+src/subscriber_str.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/listener_str.dir/build.make CMakeFiles/listener_str.dir/src/subscriber_str.cpp.o
+.PHONY : src/subscriber_str.cpp.o
+
+src/subscriber_str.i: src/subscriber_str.cpp.i
+.PHONY : src/subscriber_str.i
+
+# target to preprocess a source file
+src/subscriber_str.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/listener_str.dir/build.make CMakeFiles/listener_str.dir/src/subscriber_str.cpp.i
+.PHONY : src/subscriber_str.cpp.i
+
+src/subscriber_str.s: src/subscriber_str.cpp.s
+.PHONY : src/subscriber_str.s
+
+# target to generate assembly for a file
+src/subscriber_str.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/listener_str.dir/build.make CMakeFiles/listener_str.dir/src/subscriber_str.cpp.s
+.PHONY : src/subscriber_str.cpp.s
 
 # Help Target
 help:
@@ -286,14 +360,22 @@ help:
 	@echo "... test"
 	@echo "... ros2cc_uninstall"
 	@echo "... uninstall"
-	@echo "... listener"
-	@echo "... talker"
-	@echo "... src/publisher_member_function.o"
-	@echo "... src/publisher_member_function.i"
-	@echo "... src/publisher_member_function.s"
-	@echo "... src/subscriber_member_function.o"
-	@echo "... src/subscriber_member_function.i"
-	@echo "... src/subscriber_member_function.s"
+	@echo "... listener_int32"
+	@echo "... listener_str"
+	@echo "... talker_int32"
+	@echo "... talker_str"
+	@echo "... src/publisher_int32.o"
+	@echo "... src/publisher_int32.i"
+	@echo "... src/publisher_int32.s"
+	@echo "... src/publisher_str.o"
+	@echo "... src/publisher_str.i"
+	@echo "... src/publisher_str.s"
+	@echo "... src/subscriber_int32.o"
+	@echo "... src/subscriber_int32.i"
+	@echo "... src/subscriber_int32.s"
+	@echo "... src/subscriber_str.o"
+	@echo "... src/subscriber_str.i"
+	@echo "... src/subscriber_str.s"
 .PHONY : help
 
 

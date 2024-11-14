@@ -69,28 +69,28 @@ include CMakeFiles/talker.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/talker.dir/flags.make
 
-CMakeFiles/talker.dir/src/publisher_member_function.cpp.o: CMakeFiles/talker.dir/flags.make
-CMakeFiles/talker.dir/src/publisher_member_function.cpp.o: /home/zkm/ros/ros2/wp/src/ros2cc/src/publisher_member_function.cpp
-CMakeFiles/talker.dir/src/publisher_member_function.cpp.o: CMakeFiles/talker.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zkm/ros/ros2/wp/build/ros2cc/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/talker.dir/src/publisher_member_function.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/talker.dir/src/publisher_member_function.cpp.o -MF CMakeFiles/talker.dir/src/publisher_member_function.cpp.o.d -o CMakeFiles/talker.dir/src/publisher_member_function.cpp.o -c /home/zkm/ros/ros2/wp/src/ros2cc/src/publisher_member_function.cpp
+CMakeFiles/talker.dir/src/publisher_str.cpp.o: CMakeFiles/talker.dir/flags.make
+CMakeFiles/talker.dir/src/publisher_str.cpp.o: /home/zkm/ros/ros2/wp/src/ros2cc/src/publisher_str.cpp
+CMakeFiles/talker.dir/src/publisher_str.cpp.o: CMakeFiles/talker.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zkm/ros/ros2/wp/build/ros2cc/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/talker.dir/src/publisher_str.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/talker.dir/src/publisher_str.cpp.o -MF CMakeFiles/talker.dir/src/publisher_str.cpp.o.d -o CMakeFiles/talker.dir/src/publisher_str.cpp.o -c /home/zkm/ros/ros2/wp/src/ros2cc/src/publisher_str.cpp
 
-CMakeFiles/talker.dir/src/publisher_member_function.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/talker.dir/src/publisher_member_function.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zkm/ros/ros2/wp/src/ros2cc/src/publisher_member_function.cpp > CMakeFiles/talker.dir/src/publisher_member_function.cpp.i
+CMakeFiles/talker.dir/src/publisher_str.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/talker.dir/src/publisher_str.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zkm/ros/ros2/wp/src/ros2cc/src/publisher_str.cpp > CMakeFiles/talker.dir/src/publisher_str.cpp.i
 
-CMakeFiles/talker.dir/src/publisher_member_function.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/talker.dir/src/publisher_member_function.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zkm/ros/ros2/wp/src/ros2cc/src/publisher_member_function.cpp -o CMakeFiles/talker.dir/src/publisher_member_function.cpp.s
+CMakeFiles/talker.dir/src/publisher_str.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/talker.dir/src/publisher_str.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zkm/ros/ros2/wp/src/ros2cc/src/publisher_str.cpp -o CMakeFiles/talker.dir/src/publisher_str.cpp.s
 
 # Object files for target talker
 talker_OBJECTS = \
-"CMakeFiles/talker.dir/src/publisher_member_function.cpp.o"
+"CMakeFiles/talker.dir/src/publisher_str.cpp.o"
 
 # External object files for target talker
 talker_EXTERNAL_OBJECTS =
 
-talker: CMakeFiles/talker.dir/src/publisher_member_function.cpp.o
+talker: CMakeFiles/talker.dir/src/publisher_str.cpp.o
 talker: CMakeFiles/talker.dir/build.make
 talker: /opt/ros/humble/lib/librclcpp.so
 talker: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_c.so
