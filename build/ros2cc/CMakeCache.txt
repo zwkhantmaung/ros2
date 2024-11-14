@@ -272,7 +272,7 @@ SITE:STRING=zkm-OptiPlex-7050
 TinyXML2_DIR:PATH=TinyXML2_DIR-NOTFOUND
 
 //Path to a library.
-_lib:FILEPATH=/opt/ros/humble/lib/librosgraph_msgs__rosidl_typesupport_fastrtps_cpp.so
+_lib:FILEPATH=/home/zkm/ros/ros2/wp/install/custommsg/lib/libcustommsg__rosidl_typesupport_cpp.so
 
 //The directory containing a CMake configuration file for ament_cmake.
 ament_cmake_DIR:PATH=/opt/ros/humble/share/ament_cmake/cmake
@@ -370,6 +370,9 @@ ament_xmllint_BIN:FILEPATH=/opt/ros/humble/bin/ament_xmllint
 //The directory containing a CMake configuration file for builtin_interfaces.
 builtin_interfaces_DIR:PATH=/opt/ros/humble/share/builtin_interfaces/cmake
 
+//The directory containing a CMake configuration file for custommsg.
+custommsg_DIR:PATH=/home/zkm/ros/ros2/wp/install/custommsg/share/custommsg/cmake
+
 //The directory containing a CMake configuration file for fastcdr.
 fastcdr_DIR:PATH=/opt/ros/humble/lib/cmake/fastcdr
 
@@ -462,6 +465,9 @@ rosidl_cmake_DIR:PATH=/opt/ros/humble/share/rosidl_cmake/cmake
 
 //The directory containing a CMake configuration file for rosidl_default_runtime.
 rosidl_default_runtime_DIR:PATH=/opt/ros/humble/share/rosidl_default_runtime/cmake
+
+//The directory containing a CMake configuration file for rosidl_generate_runtime.
+rosidl_generate_runtime_DIR:PATH=rosidl_generate_runtime_DIR-NOTFOUND
 
 //The directory containing a CMake configuration file for rosidl_generator_c.
 rosidl_generator_c_DIR:PATH=/opt/ros/humble/share/rosidl_generator_c/cmake
