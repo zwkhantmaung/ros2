@@ -1,0 +1,6 @@
+Invoking command in '/home/zkm/ros/ros2/wp/build/ros2cc': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/zkm/ros/ros2/wp/src/ros2cc -DCMAKE_INSTALL_PREFIX=/home/zkm/ros/ros2/wp/install/ros2cc
+Invoked command in '/home/zkm/ros/ros2/wp/build/ros2cc' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/zkm/ros/ros2/wp/src/ros2cc -DCMAKE_INSTALL_PREFIX=/home/zkm/ros/ros2/wp/install/ros2cc
+Invoking command in '/home/zkm/ros/ros2/wp/build/ros2cc': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zkm/ros/ros2/wp/build/ros2cc -- -j8 -l8
+Invoked command in '/home/zkm/ros/ros2/wp/build/ros2cc' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/zkm/ros/ros2/wp/build/ros2cc -- -j8 -l8
+Invoking command in '/home/zkm/ros/ros2/wp/build/ros2cc': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zkm/ros/ros2/wp/build/ros2cc
+Invoked command in '/home/zkm/ros/ros2/wp/build/ros2cc' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/zkm/ros/ros2/wp/build/ros2cc
