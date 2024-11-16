@@ -132,5 +132,6 @@
     "cinttypes": "cpp",
     "typeindex": "cpp",
     "typeinfo": "cpp"
-  }
+  },
+  "cmake.sourceDirectory": "/home/zkm/ros/ros2/wp/src/custommsg"
 }

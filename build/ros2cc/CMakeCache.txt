@@ -272,7 +272,7 @@ SITE:STRING=zkm-OptiPlex-7050
 TinyXML2_DIR:PATH=TinyXML2_DIR-NOTFOUND
 
 //Path to a library.
-_lib:FILEPATH=/home/zkm/ros/ros2/wp/install/custommsg/lib/libcustommsg__rosidl_typesupport_cpp.so
+_lib:FILEPATH=/home/zkm/ros/ros2/wp/install/custommsg/lib/libcustommsg__rosidl_typesupport_fastrtps_cpp.so
 
 //The directory containing a CMake configuration file for ament_cmake.
 ament_cmake_DIR:PATH=/opt/ros/humble/share/ament_cmake/cmake

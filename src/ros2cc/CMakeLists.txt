@@ -36,7 +36,7 @@ add_executable(talker_int32 src/publisher_int32.cpp)
 ament_target_dependencies(talker_int32 rclcpp custommsg)
 
 add_executable(listener_int32 src/subscriber_int32.cpp)
-ament_target_dependencies(listener_int32 rclcpp std_msgs)
+ament_target_dependencies(listener_int32 rclcpp custommsg)
 
 
 install(TARGETS

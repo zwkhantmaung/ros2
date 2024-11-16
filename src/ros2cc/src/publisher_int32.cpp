@@ -13,7 +13,7 @@ class MinimalPublisher : public rclcpp::Node
     MinimalPublisher()
     : Node("minimal_publisher"), count_(0)
     {
-      publisher_ = this->create_publisher<custommsg::msg::Cint32>("topic", 10);
+      publisher_ = this->create_publisher<custommsg::msg::Cint32>("topic_int32", 10);
       timer_ = this->create_wall_timer(
       500ms, std::bind(&MinimalPublisher::timer_callback, this));
     }
@@ -22,8 +22,8 @@ class MinimalPublisher : public rclcpp::Node
     void timer_callback()
     {
       auto message = custommsg::msg::Cint32();
-      message.data = count_++;
-      RCLCPP_INFO(this->get_logger(), "Publishing: '%d'", message.data);
+      message.a = count_++;
+      RCLCPP_INFO(this->get_logger(), "Publishing: '%d'", message.a);
       publisher_->publish(message);
     }
     rclcpp::TimerBase::SharedPtr timer_;

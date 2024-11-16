@@ -13,7 +13,11 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Cint32.msg"
 )
 
-ament_export_dependencies(rosidl_generate_runtime)
+ament_export_dependencies(rosidl_default_runtime)
+
+rosidl_get_typesupport_target(cpp_typesupport_target
+  ${PROJECT_NAME} "rosidl_typesupport_cpp"
+)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
@@ -26,5 +30,13 @@ if(BUILD_TESTING)
   set(ament_cmake_cpplint_FOUND TRUE)
   ament_lint_auto_find_test_dependencies()
 endif()
+
+add_executable(talker_int32 src/publisher_int32.cpp)
+ament_target_dependencies(talker_int32 rclcpp)
+target_link_libraries(talker_int32 "${cpp_typesupport_target}")
+
+install(TARGETS
+  talker_int32
+  DESTINATION lib/${PROJECT_NAME})
 
 ament_package()
