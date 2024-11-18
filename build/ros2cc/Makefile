@@ -249,6 +249,19 @@ listener_int32/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/listener_int32.dir/build.make CMakeFiles/listener_int32.dir/build
 .PHONY : listener_int32/fast
 
+#=============================================================================
+# Target rules for targets named turtle_pose_subscriber
+
+# Build rule for target.
+turtle_pose_subscriber: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 turtle_pose_subscriber
+.PHONY : turtle_pose_subscriber
+
+# fast build rule for target.
+turtle_pose_subscriber/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtle_pose_subscriber.dir/build.make CMakeFiles/turtle_pose_subscriber.dir/build
+.PHONY : turtle_pose_subscriber/fast
+
 src/publisher_int32.o: src/publisher_int32.cpp.o
 .PHONY : src/publisher_int32.o
 
@@ -345,6 +358,30 @@ src/subscriber_str.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/listener_str.dir/build.make CMakeFiles/listener_str.dir/src/subscriber_str.cpp.s
 .PHONY : src/subscriber_str.cpp.s
 
+src/turtle_pose_subscriber.o: src/turtle_pose_subscriber.cpp.o
+.PHONY : src/turtle_pose_subscriber.o
+
+# target to build an object file
+src/turtle_pose_subscriber.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtle_pose_subscriber.dir/build.make CMakeFiles/turtle_pose_subscriber.dir/src/turtle_pose_subscriber.cpp.o
+.PHONY : src/turtle_pose_subscriber.cpp.o
+
+src/turtle_pose_subscriber.i: src/turtle_pose_subscriber.cpp.i
+.PHONY : src/turtle_pose_subscriber.i
+
+# target to preprocess a source file
+src/turtle_pose_subscriber.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtle_pose_subscriber.dir/build.make CMakeFiles/turtle_pose_subscriber.dir/src/turtle_pose_subscriber.cpp.i
+.PHONY : src/turtle_pose_subscriber.cpp.i
+
+src/turtle_pose_subscriber.s: src/turtle_pose_subscriber.cpp.s
+.PHONY : src/turtle_pose_subscriber.s
+
+# target to generate assembly for a file
+src/turtle_pose_subscriber.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/turtle_pose_subscriber.dir/build.make CMakeFiles/turtle_pose_subscriber.dir/src/turtle_pose_subscriber.cpp.s
+.PHONY : src/turtle_pose_subscriber.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -364,6 +401,7 @@ help:
 	@echo "... listener_str"
 	@echo "... talker_int32"
 	@echo "... talker_str"
+	@echo "... turtle_pose_subscriber"
 	@echo "... src/publisher_int32.o"
 	@echo "... src/publisher_int32.i"
 	@echo "... src/publisher_int32.s"
@@ -376,6 +414,9 @@ help:
 	@echo "... src/subscriber_str.o"
 	@echo "... src/subscriber_str.i"
 	@echo "... src/subscriber_str.s"
+	@echo "... src/turtle_pose_subscriber.o"
+	@echo "... src/turtle_pose_subscriber.i"
+	@echo "... src/turtle_pose_subscriber.s"
 .PHONY : help
 
 

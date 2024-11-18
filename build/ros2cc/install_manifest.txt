@@ -1,3 +1,4 @@
+/home/zkm/ros/ros2/wp/install/ros2cc/lib/ros2cc/turtle_pose_subscriber
 /home/zkm/ros/ros2/wp/install/ros2cc/lib/ros2cc/talker_str
 /home/zkm/ros/ros2/wp/install/ros2cc/lib/ros2cc/listener_str
 /home/zkm/ros/ros2/wp/install/ros2cc/lib/ros2cc/talker_int32

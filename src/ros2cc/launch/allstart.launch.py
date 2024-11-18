@@ -6,32 +6,37 @@ def generate_launch_description():
         Node(
             executable='turtlesim_node',
             package='turtlesim',
-            name='turtle1'
+            name='turtlesim'
         ),
         Node(
-            executable='mimic',
+            executable='turtle_teleop_key',
             package='turtlesim',
-            name='turtle2'
+            name='teleop_turtle'
         ),
-        Node(
-            executable='talker_int32',
-            package='ros2cc',
-            name='talker_int32'
-        ),
-        Node(
-            executable='listener_int32',
-            package='ros2cc',
-            name='listener_int32'
-        ),
-        Node(
-            executable='talker_str',
-            package='ros2cc',
-            name='talker_str'
-        ),
-        Node(
-            executable='listener_str',
-            package='ros2cc',
-            name='listener_str'
-        ),
+        # Node(
+        #     executable='mimic',
+        #     package='turtlesim',
+        #     name='turtle2'
+        # ),
+        # Node(
+        #     executable='talker_int32',
+        #     package='ros2cc',
+        #     name='talker_int32'
+        # ),
+        # Node(
+        #     executable='listener_int32',
+        #     package='ros2cc',
+        #     name='listener_int32'
+        # ),
+        # Node(
+        #     executable='talker_str',
+        #     package='ros2cc',
+        #     name='talker_str'
+        # ),
+        # Node(
+        #     executable='listener_str',
+        #     package='ros2cc',
+        #     name='listener_str'
+        # ),
     ])
 

@@ -11,6 +11,7 @@ find_package(std_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(custommsg REQUIRED)
+find_package(turtlesim REQUIRED)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
@@ -38,8 +39,11 @@ ament_target_dependencies(talker_int32 rclcpp custommsg)
 add_executable(listener_int32 src/subscriber_int32.cpp)
 ament_target_dependencies(listener_int32 rclcpp custommsg)
 
+add_executable(turtle_pose_subscriber src/turtle_pose_subscriber.cpp)
+ament_target_dependencies(turtle_pose_subscriber rclcpp turtlesim)
 
 install(TARGETS
+  turtle_pose_subscriber
   talker_str
   listener_str
   talker_int32

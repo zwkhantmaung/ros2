@@ -11,6 +11,7 @@ find_package(rclcpp REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Cint32.msg"
+  "srv/Csrv.srv"
 )
 
 ament_export_dependencies(rosidl_default_runtime)
@@ -31,12 +32,17 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
-add_executable(talker_int32 src/publisher_int32.cpp)
-ament_target_dependencies(talker_int32 rclcpp)
-target_link_libraries(talker_int32 "${cpp_typesupport_target}")
+add_executable(publisher_int32 src/publisher_int32.cpp)
+ament_target_dependencies(publisher_int32 rclcpp)
+target_link_libraries(publisher_int32 "${cpp_typesupport_target}")
+
+add_executable(add_two_ints_server src/add_two_ints_server.cpp)
+ament_target_dependencies(add_two_ints_server rclcpp)
+target_link_libraries(add_two_ints_server "${cpp_typesupport_target}")
 
 install(TARGETS
-  talker_int32
+  publisher_int32
+  add_two_ints_server
   DESTINATION lib/${PROJECT_NAME})
 
 ament_package()
