@@ -40,9 +40,15 @@ add_executable(add_two_ints_server src/add_two_ints_server.cpp)
 ament_target_dependencies(add_two_ints_server rclcpp)
 target_link_libraries(add_two_ints_server "${cpp_typesupport_target}")
 
+add_executable(add_two_ints_client src/add_two_ints_client.cpp)
+ament_target_dependencies(add_two_ints_client rclcpp)
+target_link_libraries(add_two_ints_client "${cpp_typesupport_target}")
+
+
 install(TARGETS
   publisher_int32
   add_two_ints_server
+  add_two_ints_client
   DESTINATION lib/${PROJECT_NAME})
 
 ament_package()

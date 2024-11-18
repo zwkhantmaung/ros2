@@ -6,12 +6,16 @@ def generate_launch_description():
         Node(
             executable='turtlesim_node',
             package='turtlesim',
-            name='turtlesim'
+            name='turtlesim',
+            output='screen',
+            emulate_tty=True,
         ),
         Node(
             executable='turtle_teleop_key',
             package='turtlesim',
-            name='teleop_turtle'
+            name='teleop_turtle',
+            output='screen',
+            prefix=['gnome-terminal --'],
         ),
         # Node(
         #     executable='mimic',
